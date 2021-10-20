@@ -1,7 +1,8 @@
 version: "3.9"
 services:
   ap:
-    image: ruby
+    build:
+      context: .
     volumes:
       - .:/workspace
     working_dir: /workspace
