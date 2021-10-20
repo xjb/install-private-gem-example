@@ -3,6 +3,10 @@ services:
   ap:
     build:
       context: .
+      args:
+        BUNDLE_GITHUB__COM:
     volumes:
       - .:/workspace
     working_dir: /workspace
+    environment:
+      BUNDLE_GITHUB__COM:
